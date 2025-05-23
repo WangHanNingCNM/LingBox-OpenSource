@@ -1,0 +1,611 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "崩溃类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$LB标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$LB标题颜色",
+            "$LB标题颜色"
+        ],
+        "image_scaled": false
+    },
+    "color": "$LB背景颜色",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "LingBox",
+            "color": "$LB功能颜色",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_ling_box",
+            "items": [
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "伪造发言",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "send_message": "nmb伪造发言",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "空手崩服",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "send_message": "nmb_konshoubengfu",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "彩色入侵",
+                    "name": "彩色入侵",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            50,
+                            50
+                        ],
+                        "icon": "LingBox/关闭/csrq.png",
+                        "on": "LingBox/开启/csrq.png",
+                        "off": "LingBox/关闭/csrq.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "入侵隐藏名字",
+                    "name": "隐藏名字",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "入侵播放音效",
+                    "name": "播放音效",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "自动刷屏",
+                    "name": "自动刷屏",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/zdsp.png",
+                        "on": "LingBox/开启/zdsp.png",
+                        "off": "LingBox/关闭/zdsp.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "内容设置",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb刷屏设置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "自动刷屏随机发言",
+                    "name": "随机发言",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "刷屏速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "刷屏延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "刷屏后缀",
+                    "name": "随机后缀",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "自动刷屏随机颜色",
+                    "name": "随机颜色",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "崩溃光环",
+                    "name": "崩溃光环",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/bkgh.png",
+                        "on": "LingBox/开启/bkgh.png",
+                        "off": "LingBox/关闭/bkgh.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃光环全体玩家",
+                    "name": "崩溃全体玩家",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃光环创造玩家",
+                    "name": "崩溃创造玩家",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃光环生存玩家",
+                    "name": "崩溃生存玩家",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃光环冒险玩家",
+                    "name": "崩溃冒险玩家",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃光环旁观玩家",
+                    "name": "崩溃旁观玩家",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃光环范围崩溃",
+                    "name": "范围崩溃",
+                    "checked": true,
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "崩溃范围",
+                    "format": "范围  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 8,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "崩溃速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "崩溃延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "崩溃器",
+                    "name": "崩溃器",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃器刷屏",
+                    "name": "刷屏",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "崩溃器发包",
+                    "name": "发包",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "自动崩服",
+                    "name": "自动崩服",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "设置",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb_zdbfsz",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "一键扣字",
+                    "name": "一键扣字",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/yjkz.png",
+                        "on": "LingBox/开启/yjkz.png",
+                        "off": "LingBox/关闭/yjkz.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "一键扣字ys",
+                    "name": "随机颜色",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "一键扣字msg",
+                    "name": "发送消息",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "一键扣字tell",
+                    "name": "指令tell",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "一键扣字me",
+                    "name": "指令me",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "一键扣字速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "一键扣字延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                }
+            ]
+        }
+    ]
+}

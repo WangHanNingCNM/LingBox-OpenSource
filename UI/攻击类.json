@@ -1,0 +1,316 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "攻击类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$LB标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$LB标题颜色",
+            "$LB标题颜色"
+        ],
+        "image_scaled": false
+    },
+    "color": "$LB背景颜色",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "LingBox",
+            "color": "$LB功能颜色",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_ling_box",
+            "items": [
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "自杀光环",
+                    "name": "自杀光环",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/zsgh.png",
+                        "on": "LingBox/开启/zsgh.png",
+                        "off": "LingBox/关闭/zsgh.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "锁定攻击",
+                    "name": "锁定攻击",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "锁定攻击暗杀",
+                    "name": "传送目标",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "锁定攻击y轴",
+                    "format": "y轴  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": -7,
+                    "max": 7
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "攻击干扰",
+                    "name": "攻击干扰",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/gjgr.png",
+                        "on": "LingBox/开启/gjgr.png",
+                        "off": "LingBox/关闭/gjgr.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "卡住目标",
+                    "name": "卡住目标",
+                    "checked": true,
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "辱骂目标",
+                    "name": "辱骂目标",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "百米大刀",
+                    "name": "百米大刀",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "百米距离",
+                    "format": "距离  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 200,
+                    "min": 0,
+                    "max": 300
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "百米延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+                    "on_sound": "开关.mp3",
+                    "off_sound": "开关.mp3",
+                    "key": "上帝模式",
+                    "name": "上帝模式",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/sdms.png",
+                        "on": "LingBox/开启/sdms.png",
+                        "off": "LingBox/关闭/sdms.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "上帝模式水平传送",
+                    "name": "水平传送",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "上帝模式垂直传送",
+                    "name": "垂直传送",
+                    "checked": true,
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "上帝模式发包数量",
+                    "format": "发包数量  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "上帝模式距离",
+                    "format": "距离  %d×10",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 20,
+                    "min": 0,
+                    "max": 30
+                }
+            ]
+        }
+    ]
+}

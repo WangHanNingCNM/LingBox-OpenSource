@@ -1,0 +1,89 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "娱乐类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$LB标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$LB标题颜色",
+            "$LB标题颜色"
+        ],
+        "image_scaled": false
+    },
+    "color": "$LB背景颜色",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "LingBox",
+            "color": "$LB功能颜色",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_ling_box",
+            "items": [
+            {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "Q绑查询",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "send_message": "nmbq绑查询",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+            {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "自动挥手",
+                    "name": "自动挥手",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "自动跳跃",
+                    "name": "自动跳跃",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                }
+            ]
+        }
+    ]
+}

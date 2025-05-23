@@ -1,0 +1,191 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "LingBox",
+        "size": 15,
+        "elevation": 50,
+        "background": "$LB标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$LB标题颜色",
+            "$LB标题颜色"
+        ]
+    },
+    "color": "$LB背景颜色",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": true,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "sound": "click.mp3",
+            "name": "加载LingBox",
+            "tip": "不要多次点击我",
+            "tag": "extra_ling_box",
+            "color": "$LB功能颜色",
+            "size": 10,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "load_script": "LingBox.js",
+            "items": [
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "退出脚本",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "send_message": "nmb退出",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "开关提示",
+                    "name": "开关提示",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "查看坐标",
+                    "name": "显示当前坐标",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "使用时间",
+                    "name": "显示使用时间",
+                    "color": "$LB功能颜色",
+                    "checked": true,
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "崩溃类",
+            "color": "$LB标题颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "LingBox/崩溃类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "攻击类",
+            "color": "$LB标题颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "LingBox/攻击类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "玩家类",
+            "color": "$LB标题颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "LingBox/玩家类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "辅助类",
+            "color": "$LB标题颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "LingBox/辅助类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "渲染类",
+            "color": "$LB标题颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "LingBox/渲染类"
+        },
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "娱乐类",
+            "color": "$LB标题颜色",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "LingBox/娱乐类"
+        }
+    ]
+}

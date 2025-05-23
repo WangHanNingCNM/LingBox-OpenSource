@@ -1,0 +1,404 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "玩家类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$LB标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$LB标题颜色",
+            "$LB标题颜色"
+        ],
+        "image_scaled": false
+    },
+    "color": "$LB背景颜色",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "LingBox",
+            "color": "$LB功能颜色",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_ling_box",
+            "items": [
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "原地复活",
+                    "name": "原地复活",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "无限夜视",
+                    "name": "无限夜视",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "屏蔽掉落物",
+                    "name": "屏蔽掉落物",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "自动破坏",
+                    "name": "自动破坏",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/zdph.png",
+                        "on": "LingBox/开启/zdph.png",
+                        "off": "LingBox/关闭/zdph.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "重置方块",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb自动破坏连锁破坏重置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "自动破坏连锁破坏",
+                    "name": "连锁破坏",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "自动破坏排除脚下",
+                    "name": "排除脚下方块",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "自动破坏大小",
+                    "format": "大小  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 4
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "自动破坏延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "点击破坏",
+                    "name": "点击破坏",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/djph.png",
+                        "on": "LingBox/开启/djph.png",
+                        "off": "LingBox/关闭/djph.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "CheckBox",
+                    "on_sound": "勾选.mp3",
+                    "off_sound": "勾选.mp3",
+                    "key": "点击破坏连锁破坏",
+                    "name": "连锁破坏",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "点击破坏大小",
+                    "format": "大小  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 4
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "定点随机传送",
+                    "name": "末影光环",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/mygh.png",
+                        "on": "LingBox/开启/mygh.png",
+                        "off": "LingBox/关闭/mygh.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "坐标设置",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb设置坐标设置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "设置原地为目标",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb设置原地为目标",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "定点随机传送范围",
+                    "format": "传送xz范围  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 25,
+                    "min": 1,
+                    "max": 50
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "定点随机传送高低",
+                    "format": "传送y范围  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 3,
+                    "min": 0,
+                    "max": 30
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "定点随机传送延迟",
+                    "format": "传送延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 5,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "自动点击",
+                    "name": "自动点击",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "自动点击速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 40
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "自动点击延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 40
+                }
+            ]
+        }
+    ]
+}

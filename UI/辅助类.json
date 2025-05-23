@@ -1,0 +1,367 @@
+{
+    "type": "Menu",
+    "title": {
+        "name": "辅助类",
+        "size": 15,
+        "elevation": 50,
+        "background": "$LB标题背景颜色",
+        "padding": [
+            4,
+            4,
+            4,
+            4
+        ],
+        "colors": [
+            "$LB标题颜色",
+            "$LB标题颜色"
+        ],
+        "image_scaled": false
+    },
+    "color": "$LB背景颜色",
+    "alpha": 0.85,
+    "can_close": true,
+    "image_scaled_size": 40,
+    "radius": 5,
+    "show_dividers": false,
+    "hide": true,
+    "items": [
+        {
+            "type": "TextView",
+            "sound": "点击.mp3",
+            "name": "LingBox",
+            "color": "$LB功能颜色",
+            "size": 15,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "tag": "extra_ling_box",
+            "items": [
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "复制手持物品",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "send_message": "nmb_fuzhiwp",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "Switch",
+                    "key": "捡掉落物",
+                    "name": "捡掉落物",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "捡掉落物延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 20
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "受击回城",
+                    "name": "低血回城",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "回城传送",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "send_message": "nmb回城传送",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "设置坐标",
+                    "color": "$LB功能子选项颜色",
+                    "size": 8,
+                    "send_message": "nmb回城传送设置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "回城传送延迟",
+                    "format": "返回延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 8,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 0,
+                    "max": 40
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "丢弃手持物品",
+                    "name": "丢弃手持物品",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/dqwp.png",
+                        "on": "LingBox/开启/dqwp.png",
+                        "off": "LingBox/关闭/dqwp.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "丢弃手持物品速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 64
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "丢弃背包",
+                    "name": "丢弃背包",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/dqbb.png",
+                        "on": "LingBox/开启/dqbb.png",
+                        "off": "LingBox/关闭/dqbb.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "槽位设置",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb槽位设置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "丢弃背包速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 64
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "丢弃背包延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 100
+                },
+                {
+                    "type": "Switch",
+            "on_sound": "开关.mp3",
+            "off_sound": "开关.mp3",
+                    "key": "音效播放器",
+                    "name": "音效播放器",
+                    "color": "$LB功能颜色",
+                    "size": 11,
+                    "padding": [
+                        5,
+                        0,
+                        5,
+                        0
+                    ],
+                    "shortcut": {
+                        "type": "CheckedButton",
+                        "on_sound": "开关.mp3",
+                        "off_sound": "开关.mp3",
+                        "params": [
+                            80,
+                            20
+                        ],
+                        "icon": "LingBox/关闭/ypbf.png",
+                        "on": "LingBox/开启/ypbf.png",
+                        "off": "LingBox/关闭/ypbf.png",
+                        "no_circle": true
+                    }
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "一键配置",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb音效播放器一键配置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "音频ID +1",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb音频ID加一",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "TextView",
+            "sound": "点击.mp3",
+                    "name": "编辑音频ID",
+                    "color": "$LB功能子选项颜色",
+                    "size": 11,
+                    "send_message": "nmb音效播放器设置",
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "音效播放器速度",
+                    "format": "速度  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 1,
+                    "min": 1,
+                    "max": 200
+                },
+                {
+                    "type": "SeekBar",
+                    "key": "音效播放器延迟",
+                    "format": "延迟  %d",
+                    "color": "$LB功能子选项颜色",
+                    "size": 10,
+                    "padding": [
+                        5,
+                        5,
+                        5,
+                        5
+                    ],
+                    "value": 0,
+                    "min": 0,
+                    "max": 200
+                }
+            ]
+        }
+    ]
+}
